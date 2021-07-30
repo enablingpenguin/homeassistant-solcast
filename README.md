@@ -1,7 +1,7 @@
 # Solcast [[Home Assistant](https://www.home-assistant.io/) Component]
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
 
-This custom component integrates the Solcast API into Home Assistant.
+This custom component integrates the Solcast API into Home Assistant. Modified from dannerph/homeassistant-solcast to include hourly forcasts for the next day. There is probally a much better way to do this
 
 ## Basic Installation/Configuration Instructions:
 Copy content of custom_components to your local custom_components folder and add the following lines to your configuration.
