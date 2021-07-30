@@ -185,6 +185,30 @@ class SolcastRooftopSite(SolcastAPI):
             "tomorrow": None,
             "the day after tomorrow": None,
             "the day after the day after tomorrow": None,
+            "00:00 UTC": None,
+            "01:00 UTC": None,
+            "02:00 UTC": None,
+            "03:00 UTC": None,
+            "04:00 UTC": None,
+            "05:00 UTC": None,
+            "06:00 UTC": None,
+            "07:00 UTC": None,
+            "08:00 UTC": None,
+            "09:00 UTC": None,
+            "10:00 UTC": None,
+            "11:00 UTC": None,
+            "12:00 UTC": None,
+            "13:00 UTC": None,
+            "14:00 UTC": None,
+            "15:00 UTC": None,
+            "16:00 UTC": None,
+            "17:00 UTC": None,
+            "18:00 UTC": None,
+            "19:00 UTC": None,
+            "20:00 UTC": None,
+            "21:00 UTC": None,
+            "22:00 UTC": None,
+            "23:00 UTC": None,
         },
         SensorType.api_count: {}
     }
@@ -333,6 +357,173 @@ class SolcastRooftopSite(SolcastAPI):
                             today_start + timedelta(2), today_start + timedelta(3)
                         ),
                         2,
+                    ),
+                    "00:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start, today_start + timedelta(hours=1)
+                        ),
+                        4,
+                    ),
+                    
+                    "01:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=1), today_start + timedelta(hours=2)
+                        ),
+                        4,
+                    ),
+                    
+                    "02:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=2), today_start + timedelta(hours=3)
+                        ),
+                        4,
+                    ),
+                    
+                    "03:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=3), today_start + timedelta(hours=4)
+                        ),
+                        4,
+                    ),
+                    
+                    "04:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=4), today_start + timedelta(hours=5)
+                        ),
+                        4,
+                    ),
+                    
+                    "05:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=5), today_start + timedelta(hours=6)
+                        ),
+                        4,
+                    ),
+                    
+                    "06:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=6), today_start + timedelta(hours=7)
+                        ),
+                        4,
+                    ),
+                    
+                    "07:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=7), today_start + timedelta(hours=8)
+                        ),
+                        4,
+                    ),
+                    
+                    "08:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=8), today_start + timedelta(hours=9)
+                        ),
+                        4,
+                    ),
+                    
+                    "09:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=9), today_start + timedelta(hours=10)
+                        ),
+                        4,
+                    ),
+                    
+                    "10:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=10), today_start + timedelta(hours=11)
+                        ),
+                        4,
+                    ),
+                    
+                    "11:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=11), today_start + timedelta(hours=12)
+                        ),
+                        4,
+                    ),
+                    
+                    "12:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=12), today_start + timedelta(hours=13)
+                        ),
+                        4,
+                    ),
+                    
+                    "13:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=13), today_start + timedelta(hours=14)
+                        ),
+                        4,
+                    ),
+                    
+                    "14:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=14), today_start + timedelta(hours=15)
+                        ),
+                        4,
+                    ),
+                    
+                    "15:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=15), today_start + timedelta(hours=16)
+                        ),
+                        4,
+                    ),
+                    
+                    "16:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=16), today_start + timedelta(hours=17)
+                        ),
+                        4,
+                    ),
+                    
+                    "17:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=17), today_start + timedelta(hours=18)
+                        ),
+                        4,
+                    ),
+                    
+                    "18:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=18), today_start + timedelta(hours=19)
+                        ),
+                        4,
+                    ),
+                    
+                    "19:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=19), today_start + timedelta(hours=20)
+                        ),
+                        4,
+                    ),
+                    
+                    "20:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=20), today_start + timedelta(hours=21)
+                        ),
+                        4,
+                    ),
+                    
+                    "21:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=21), today_start + timedelta(hours=22)
+                        ),
+                        4,
+                    ),
+                    
+                    "22:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=22), today_start + timedelta(hours=23)
+                        ),
+                        4,
+                    ),
+                    
+                    "23:00 UTC": round(
+                        self._calculate_energy_forecast(
+                            today_start + timedelta(hours=23), today_start + timedelta(hours=24)
+                        ),
+                        4,
                     ),
                 }
 
